@@ -1,0 +1,139 @@
+body {
+    background: radial-gradient(circle, rgb(53, 53, 53), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+.menu-box {
+    position: fixed;
+    border-bottom: 2px solid white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to left, rgb(59, 59, 59), black);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.menu-btn:hover {
+    background-color: rgba(222, 222, 40, 0.7);
+    ;
+    /*rgba(255, 255, 255, 0.1);*/
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialButton {
+    background-color: transparent;
+    cursor: pointer;
+    font: bold;
+    border: none;
+    cursor: pointer;
+    font: bold;
+    font-size: 16px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin: 7px 0;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.dev {
+    font-size: 50px;
+    color: rgb(209, 244, 247);
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
+
+.dev::after {
+    content: "Developer";
+    color: rgb(222, 222, 40);
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    top: 120px;
+}
+
+.tech-item {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 60%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.tech-item span {
+    color: white;
+    font-weight: bold;
+}
+
+.tech-stack-intro {
+    padding: 5px;
+    font-size: 25px;
+    position: relative;
+    top: 240px;
+    left: 380px;
+    color: wheat;
+    max-width: 60px;
+    animation: teckStackGlow 5s infinite;
+}
+
+@keyframes teckStackGlow {
+    0% {
+        border: 2px solid purple;
+        box-shadow: 0 0 15px purple;
+    }
+
+    25% {
+        border: 2px solid rgb(128, 77, 0);
+        box-shadow: 0 0 30px rgb(128, 77, 0);
+    }
+
+    50% {
+        border: 2px solid rgb(75, 128, 0);
+        box-shadow: 0 0 15px rgb(75, 128, 0);
+    }
+
+    75% {
+        border: 2px solid rgb(128, 0, 75);
+        box-shadow: 0 0px 30px rgb(128, 0, 75);
+    }
+
+    100% {
+        border: 2px solid rgb(250, 32, 12);
+        box-shadow: 0 0px 15px rgb(250, 32, 12);
+    }
+}
