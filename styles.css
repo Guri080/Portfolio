@@ -84,7 +84,6 @@ body {
 
 .menu-btn:hover {
     background-color: rgba(222, 222, 40, 0.7);
-
     text-decoration: underline;
 }
 
@@ -113,9 +112,9 @@ body {
 .dev {
     font-size: 50px;
     color: rgb(209, 244, 247);
-    position: absolute;
-    top: 220px;
-    left: 300px;
+    position: relative;
+    top: 60px;
+    margin-left: 400px;
 }
 
 .dev::after {
@@ -156,10 +155,10 @@ body {
     padding: 5px;
     font-size: 25px;
     position: relative;
-    top: 240px;
-    left: 380px;
+    top: 15px;
     color: wheat;
     max-width: 60px;
+    max-height: 60px;
     animation: teckStackGlow 5s infinite;
 }
 
@@ -190,3 +189,75 @@ body {
     }
 }
 
+.about-me-contaniner {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    max-width: 800px;
+    height: auto;
+    top: 250px;
+    margin-left: 480px;
+}
+
+.about-me-contaniner h1{
+    font-size: 40px;
+    color: white;
+    margin:0;
+}
+
+.about-me-contaniner p {
+    color: wheat;
+    font-size:large;
+    line-height: 25px;
+}
+
+.about-me-contaniner:hover {
+    from {
+        border-left: 0px solid blue;
+        border-right: 0px solid blue;
+    }
+
+    to {
+        border-left: 5px solid blue;
+        border-right: 5px solid blue;
+    }
+}
+
+.about-me-btns-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: 240px;
+    left: -170px;
+    border: none;
+}
+
+.about-btns {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+.about-me-btns-container .about-btns::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 20%;
+    height: 2.5px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.about-btns:hover::before {
+    width: 100%;
+}
