@@ -15,13 +15,12 @@
         <div class="circle circle3"></div>
     </div>
     <div class="menu-box"><!--Information and reaching out-->
-        <button class="menu-btn">Home</button>
-        <button class="menu-btn">About</button>
-        <button class="menu-btn">Projects</button>
-        <button class="menu-btn">Experience</button>
-        <button class="menu-btn">Connect</button>
+        <button class="menu-btn"><a href="#home">Home</a></button>
+        <button class="menu-btn"><a href="#aboutMe">About</a></button>
+        <button class="menu-btn"><a href="#projects">Projects</a></button>
+        <button class="menu-btn"><a href="#connect">Connect</a></button>
     </div>
-    <div><!--Introduction paragraphs-->
+    <div id="home"><!--Introduction paragraphs-->
         <p
             style="font-family: block;color:aquamarine;font-size: 26px;position:relative;top: 140px;margin-left: 400px; max-width: 200px;">
             Hi, my name is</p>
@@ -70,8 +69,8 @@
             </div>
         </div>
     </div>
-    <div class="about-me-contaniner">
-        <img src="images/aboutmeImg.jpg" class="globeImg">
+    <div id="aboutMe" class="about-me-contaniner">
+        <img src="images/aboutmeImg.jpg" class="aboutMeImg">
         <div class="aboutMeText">
             <h1>About me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -97,7 +96,9 @@
     </div>
 
 
-    <div class="projectContainer">
+    <div id="projects" class="projectContainer">
+        <h1 class="projectHead">Projects</h1>
+        <p class="projectFollowUp">Each project is a unique piece of devlopment</p>
         <div class="project">
             <div>
                 <img src="images/cssLogo.svg" class="projectImg">
@@ -195,18 +196,20 @@
         </div>
     </div>
     <h2 style="margin-left:500px;top:1000px; position: relative; color: rgb(165, 167, 168);">Find me on!</h2>
-    <div class="contactMeContainer">
+    <div id="connect" class="contactMeContainer">
         <div class="socials">
             <img src="images/gmail.png" class="socialImg">
-            <button>gursparshsodhi@gmail.com</button>
+            <a class="socialsBtn" href="https://mail.google.com/mail/u/0/#inbox"
+                target="_blank">gursparshsodhi@gmail.com</a>
         </div>
         <div class="socials">
             <img src="images/linkedInPng.png" class="socialImg">
-            <button>LinkedIn</button>
+            <a class="socialsBtn" href="https://www.linkedin.com/in/gursparsh-sodhi-742896212/"
+                target="_blank">LinkedIn</a>
         </div>
         <div class="socials">
             <img src="images/gitHubPng.png" class="socialImg">
-            <button>GitHub</button>
+            <a class="socialsBtn" href="https://github.com/Guri080" target="_blank">GitHub</a>
         </div>
     </div>
 
