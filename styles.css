@@ -295,7 +295,7 @@ a {
     width: 60%;
     height: auto;
     position: relative;
-    top: 600px;
+    top: 250px;
     margin-left: 250px;
     display: flex;
     flex-direction: column;
@@ -305,10 +305,12 @@ a {
 
 .projectHead {
     color: white;
+    font-size: 35px;
 }
 
 .projectFollowUp {
     color: white;
+    font-size: 22px;
 }
 
 .project {
@@ -360,9 +362,41 @@ a {
 .projectImg {
     box-shadow: 0px 0px 5px 1.5px white;
     position: relative;
-    width: 420px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
     margin-right: 20px;
+}
+
+.projectImg:hover{
+    width: 420px;
+    height: 350px;
+    animation: projImgBorder 5s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes projImgBorder{
+
+    0%{
+        border: 2.5px solid rgba(242, 39, 21, 0.61);
+        box-shadow: none;
+    }
+    25%{
+        border: 2.5px solid rgba(73, 255, 176, 0.61);
+        box-shadow: none;
+    }
+    50%{
+        border: 2.5px solid rgba(250, 253, 181, 0.74);
+        box-shadow: none;
+    }
+    75%{
+        border: 2.5px solid  rgba(84, 132, 255, 0.61);
+        box-shadow: none;
+    }
+    100%{
+        border: 2.5px solid rgba(255, 132, 154, 0.61);
+        box-shadow: none;
+    }
+    
 }
 
 .project-btn-img {
@@ -377,16 +411,34 @@ a {
 
 .contactMeContainer {
     width: 650px;
-    border: 2px solid rgb(216, 211, 211);
-    box-shadow: 1px 4p 3px 7px rgb(216, 211, 211);
+    border: 2px solid rgb(201, 55, 55);
+    box-shadow: 1px 4p 3px 7px rgb(201, 55, 55);
     border-radius: 10px;
     background-color: rgb(144, 138, 138);
     padding: 20px;
     position: relative;
     top: 1000px;
-    margin-left: 500px;
+    margin-left:370px;
     display: flex;
     justify-content: flex-start;
+}
+
+.findMeOn{
+    margin-left:370px;
+    top:1000px;
+    position: relative;
+    color: rgb(165, 167, 168);
+}
+
+.findMeOn::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 3%;
+    height: 2.5px;
+    background-color: red;
 }
 
 .socials {
@@ -394,6 +446,7 @@ a {
     flex-direction: column;
     margin: 20px;
     align-items: center;
+    padding-left: 20px;
 }
 
 .socialsBtn {
