@@ -364,7 +364,7 @@ a {
     position: relative;
     width: 350px;
     height: 300px;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .projectImg:hover{
@@ -417,7 +417,7 @@ a {
     background-color: rgb(144, 138, 138);
     padding: 20px;
     position: relative;
-    top: 1000px;
+    top: 450px;
     margin-left:370px;
     display: flex;
     justify-content: flex-start;
@@ -425,7 +425,7 @@ a {
 
 .findMeOn{
     margin-left:370px;
-    top:1000px;
+    top:450px;
     position: relative;
     color: rgb(165, 167, 168);
 }
@@ -475,7 +475,7 @@ a {
 
 .rectangle {
     position: relative;
-    top: 1100px;
+    top: 500px;
     bottom: 0px;
     left: 0;
     width: 1100%;
