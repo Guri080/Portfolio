@@ -233,7 +233,7 @@ a {
 }
 
 .aboutMeText {
-    width: 700px;
+    width: 650px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -251,9 +251,9 @@ a {
     padding: 10px;
     box-shadow: 1px 1.5px 4px 2px rgb(62, 61, 61);
     background-color: rgb(0, 0, 0);
-    color: rgba(0, 255, 255, 0.708);
-    font-size: large;
-    line-height: 25px;
+    color: rgba(145, 255, 255, 0.809);
+    font-size: 21px;
+    line-height: 27px;
     animation: glow 1s linear infinite;
 }
 
