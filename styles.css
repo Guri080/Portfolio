@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: rgb(28, 29, 33);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -9,6 +9,19 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.intro-circle {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    background-color: rgb(18, 18, 20);
+    border-radius: 50%;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.474);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.38)
 }
 
 .circleContainer {
@@ -134,8 +147,8 @@ a {
     font-size: 50px;
     color: rgb(209, 244, 247);
     position: relative;
-    top: 60px;
-    margin-left: 400px;
+    top: 95px;
+    left: 200px;
 }
 
 .dev::after {
@@ -218,7 +231,7 @@ a {
     height: auto;
     width: 95%;
     margin-left: 150px;
-    top: 200px;
+    top: 100px;
     padding-top: 100px;
 }
 
@@ -260,13 +273,15 @@ a {
 @keyframes glow {
     0% {
         box-shadow: 0 0 5px rgba(127, 255, 212, 0.758);
-      }
-      50% {
+    }
+
+    50% {
         box-shadow: 10px 0 30px rgba(200, 200, 202, 0.7);
-      }
-      100% {
+    }
+
+    100% {
         box-shadow: 0 0 5px rgba(0, 255, 255, 0.732);
-      }
+    }
 }
 
 
@@ -382,36 +397,40 @@ a {
     margin: 10px;
 }
 
-.projectImg:hover{
+.projectImg:hover {
     width: 420px;
     height: 350px;
     animation: projImgBorder 5s infinite ease-in-out;
     border-radius: 10px;
 }
 
-@keyframes projImgBorder{
+@keyframes projImgBorder {
 
-    0%{
+    0% {
         border: 2.5px solid rgba(242, 39, 21, 0.61);
         box-shadow: none;
     }
-    25%{
+
+    25% {
         border: 2.5px solid rgba(73, 255, 176, 0.61);
         box-shadow: none;
     }
-    50%{
+
+    50% {
         border: 2.5px solid rgba(250, 253, 181, 0.74);
         box-shadow: none;
     }
-    75%{
-        border: 2.5px solid  rgba(84, 132, 255, 0.61);
+
+    75% {
+        border: 2.5px solid rgba(84, 132, 255, 0.61);
         box-shadow: none;
     }
-    100%{
+
+    100% {
         border: 2.5px solid rgba(255, 132, 154, 0.61);
         box-shadow: none;
     }
-    
+
 }
 
 .project-btn-img {
@@ -433,19 +452,19 @@ a {
     padding: 20px;
     position: relative;
     top: 450px;
-    margin-left:370px;
+    margin-left: 370px;
     display: flex;
     justify-content: flex-start;
 }
 
-.findMeOn{
-    margin-left:370px;
-    top:450px;
+.findMeOn {
+    margin-left: 370px;
+    top: 450px;
     position: relative;
     color: rgb(165, 167, 168);
 }
 
-.findMeOn::before{
+.findMeOn::before {
     content: "";
     display: block;
     position: absolute;
